@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+
+/*.container__sidebar {}*/
+
+.container__main {
+  flex: 1 1 auto;
+}

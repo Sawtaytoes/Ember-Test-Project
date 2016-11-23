@@ -1,0 +1,5 @@
+<ul>
+  {{#each accounts key="id" as |account|}}
+    <li>{{#link-to "accounts" account}}{{account.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
