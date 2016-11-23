@@ -2,17 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
     model() {
-
-      // this.store.createRecord('budget-category', {
-      //   name: 'Bills',
-      //   funded: '1000',
-      // }).
-      // this.store.createRecord('budget-category', {
-      //   name: 'Entertainment',
-      //   funded: '150',
-      // });
-
-      // return Ember.get('budget-category')
       const budgetObjects = [];
       const budgetCategories = [{
         id: 0,

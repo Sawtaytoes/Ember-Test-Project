@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .container {
   display: flex;
 }
@@ -7,3 +13,64 @@
 .container__main {
   flex: 1 1 auto;
 }
+
+/* ----------------------------- */
+
+.budget-category {
+  display: flex;
+  padding: 20px;
+  list-style: none;
+}
+
+.budget-category:hover {
+  background-color: lightblue;
+}
+
+.budget-category--heading {
+  font-weight: bold;
+  background-color: skyblue;
+}
+
+.budget-category__name {
+  width: 140px;
+}
+
+.budget-category__currencies {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.budget-category__currency {
+  width: 33.333333%;
+  flex: 0 0 33.333333%;
+}
+
+/* ----------------------------- */
+
+.transaction {
+  display: flex;
+  padding: 20px;
+  list-style: none;
+}
+
+.transaction:hover {
+  background-color: lightblue;
+}
+
+.transaction--heading {
+  font-weight: bold;
+  background-color: skyblue;
+}
+
+.transaction__name {
+  width: 140px;
+}
+
+.transaction__currencies {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+/*.transaction__currency {}*/

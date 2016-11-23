@@ -1,5 +1,5 @@
 <ul>
-  {{#each transactions as |transaction|}}
+  {{#each transactions key="id" as |transaction|}}
     <li>{{transaction.name}}</li>
   {{/each}}
 </ul>

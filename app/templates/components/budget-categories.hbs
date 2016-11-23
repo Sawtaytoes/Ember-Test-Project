@@ -1,5 +1,36 @@
 <ul>
-  {{#each categories as |category|}}
-    <li>{{category.name}}</li>
+  <li class="budget-category budget-category--heading">
+    <div class="budget-category__name">Category</div>
+
+    <ul class="budget-category__currencies">
+      <li class="budget-category__currency">
+        Budgeted
+      </li>
+      <li class="budget-category__currency">
+        Outflows
+      </li>
+      <li class="budget-category__currency">
+        Balance
+      </li>
+    </ul>
+  </li>
+
+  {{#each categories key="id" as |category|}}
+    <li class="budget-category">
+      <div class="budget-category__name">{{category.name}}</div>
+
+      <ul class="budget-category__currencies">
+        <li class="budget-category__currency">
+          ${{category.funded}}
+        </li>
+        <li class="budget-category__currency">
+          $-50
+          {{controller}}
+        </li>
+        <li class="budget-category__currency">
+          ${{category.funded}} - 50
+        </li>
+      </ul>
+    </li>
   {{/each}}
 </ul>
